@@ -8,13 +8,13 @@
    <link rel="shortcut icon" href="../../assets/ico/favicon.png">
 
    <title>TestGang</title>
-   <link href="css/main.css" rel="stylesheet">
    <link href="css/bootstrap.min.css" rel="stylesheet">
+   <link href="css/main.css" rel="stylesheet">
 </head>
 
 <body>
 
-<div class="navbar navbar-inverse navbar-fixed-top">
+  <div class="navbar navbar-inverse navbar-fixed-top">
    <div class="container">
       <div class="navbar-header">
          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -27,11 +27,10 @@
       <div class="navbar-collapse collapse">
          <form class="navbar-form navbar-right">
             <ul class="nav navbar-nav">
-               <li class="active"><a href="#">Home</a></li>
-               <li><a href="#about">About</a></li>
-               <li><a href="#about">Getting started</a></li>
-               <li><a href="#about">Features</a></li>
-               <li><a href="#contact">Log In</a></li>
+               <li class="active"><a href="#home">Home</a></li>               
+               <li><a href="#features">Features</a></li>
+               <li><a href="#faq">Questions?</a></li>
+               <li><a href="https://app.testgang.net">Log In</a></li>
             </ul>
          </form>
       </div>
@@ -39,103 +38,47 @@
    </div>
 </div>
 
-<!--Main jumbotron for a primary marketing message or call to action-->
-<div class="jumbotron">
-   <div class="container">
-      <h1>TestGang - the community that cares about testing!</h1>
-
-      <p>Heterogeneous client-server system which enables people to test their mobile applications on a variety of
-         devices shared between the members. Anybody is free to join and become a part of the unique common welfare of
-         mobile resources.</p>
-
-      <p><a class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
-   </div>
-</div>
-
 <div class="container">
-   <!-- Example row of columns -->
+  <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+  </ol>
 
-   <div class="row">
-      <div class="panel-heading">Why TestGang?</div>
-      Easily share your phone with your friend for running tests (link to more)
-      Fast test execution mode by splitting and running tests in parallel ( link to more)
-      Test on real user devices and not only on the ones hosted in Cloud
-   </div>
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item active">
+      <img src="images/slide-1.png"/>      
+    </div>
+     <div class="item">
+      <img src="images/slide-2.png"/>      
+    </div>
+  </div>
+</div>   
+  
+  <section id="gettingstarted">
 
-   <hr>
-   <!-- Features -->
-   <div class="row">
-      <div class="col-lg-3">
-         <h2>Parallel test execution</h2>
+  <div class="page-header">
+     <h1>Getting started...</h1>
+  </div>
 
-         <p>Improve test execution speed by running tests in FAST modle.</p>
-
-         <p><a class="btn btn-default" href="#">View details &raquo;</a></p>
-      </div>
-      <div class="col-lg-3">
-         <h2>Multiple OS support</h2>
-
-         <p>All there most popular operating systems Linux, Windows and Mac are supported.</p>
-
-         <p><a class="btn btn-default" href="#">View details &raquo;</a></p>
-      </div>
-      <div class="col-lg-3">
-         <h2>Easy and convenient test execution</h2>
-
-         <p>Start your tests on multiple device with click.</p>
-
-         <p><a class="btn btn-default" href="#">View details &raquo;</a></p>
-      </div>
-      <div class="col-lg-3">
-         <h2>Your own test community</h2>
-
-         <p>Sharing devices with your colleagues has never been easier.</p>
-
-         <p><a class="btn btn-default" href="#">View details &raquo;</a></p>
-      </div>
-   </div>
-
-   <div class="row">
-      <div class="col-lg-3">
-         <h2>Detailed reports</h2>
-
-         <p>Get extensive test report and device logs collected during test execution.</p>
-
-         <p><a class="btn btn-default" href="#">View details &raquo;</a></p>
-      </div>
-      <div class="col-lg-3">
-         <h2>Multiple testing frameworks</h2>
-
-         <p>TestGang currently supports Instrumentation (link to google) (Robotium) and UIAutomator.</p>
-
-         <p><a class="btn btn-default" href="#">View details &raquo;</a></p>
-      </div>
-      <div class="col-lg-3">
-         <h2>Integrate and automate</h2>
-
-         <p>REST API interface that you can use to integrate with you CI environment or automate repetitive tasks.</p>
-
-         <p><a class="btn btn-default" href="#">View details &raquo;</a></p>
-      </div>
-
-   </div>
-
-   <hr>
-
-   <div class="row">
+  <div class="row"> 
       <div class="col-lg-4">
-         <div class="panel panel-default">
+         <div class="panel panel-success">
             <div class="panel-heading">How does it work ?</div>
+            <div class="panel-body">
             <ul>
                <li>Become a member by registering</li>
                <li>Use devices shared with you to run tests for your application</li>
                <li>Analyse test reports and device logs</li>
                <li>Share device with your colleagues</li>
             </ul>
+            </div>
          </div>
       </div>
       <div class="col-lg-4">
-         <div class="panel panel-default">
+         <div class="panel panel-success">
             <div class="panel-heading">How to share devices ?</div>
             <ul>
                <li>Download the client</li>
@@ -145,7 +88,7 @@
          </div>
       </div>
       <div class="col-lg-4">
-         <div class="panel panel-default">
+         <div class="panel panel-success">
             <div class="panel-heading">How to run tests ?</div>
             <ul>
                <li>Upload your Android application (APK) file and test JAR files.</li>
@@ -156,25 +99,80 @@
       </div>
    </div>
 
+ </section>
+  
+  <section id="features">
+  <div class="page-header">
+    <h1>Features <small>and many more to come...</small></h1>
+  </div>
+
+   <!-- Features -->
    <div class="row">
-      <div class="col-lg-12">
-         <div class="panel panel-default">
-            <div class="panel-heading">Automation</div>
-            Executing a test can be as simple as sending a http request like:<br/>
-            &nbsp;&nbsp;<i>curl -X PUT -u name:password -H "Content-Type: application/json" -d '{"testconfigId":"12"}'
-            ht
-            tp://rip.testgang.net/rip/testrun</i>
-         </div>
+      <div class="col-lg-3">
+         <h4>Parallel test execution</h4>
+         <p>Improve test execution speed by running tests in FAST mode which will split
+          and run your tests in parralel on multiple devices</p>         
+      </div>
+      <div class="col-lg-3">
+         <h4>Multiple OS support</h4>
+         <p>All there most popular operating systems Linux, Windows and Mac are supported.</p>        
+      </div>
+      <div class="col-lg-3">
+         <h4>Easy and convenient test execution</h4>
+         <p>Start your tests on multiple device with click.</p>        
+      </div>
+      <div class="col-lg-3">
+         <h4>Your own test community</h4>
+         <p>Sharing devices with your colleagues has never been easier.</p>         
       </div>
    </div>
 
    <hr>
 
    <div class="row">
-      <div class="col-lg-12">
-         <h1>FAQ</h1>
+      <div class="col-lg-4">
+         <h4>Detailed reports</h4>
+         <p>Get extensive test report and device logs collected during test execution.</p>
+        
+      </div>
+      <div class="col-lg-4">
+         <h4>Multiple testing frameworks</h4>
+         <p>TestGang currently supports Instrumentation (link to google) (Robotium) and UIAutomator.</p>
+         
+      </div>
+      <div class="col-lg-4">
+         <h4>Integrate and automate</h4>
+         <p>REST API interface that you can use to integrate with you CI environment or automate repetitive tasks.</p>        
+      </div>
+   </div>
 
-         <div class="list-group">
+  </section>  
+ 
+  <section id="automation">
+
+  <div class="page-header">
+    <h1>Automation <small>and integration with Your tools</small></h1>
+  </div>
+
+   <div class="row">
+    <div class="col-lg-12">
+      Executing a test can be as simple as sending a http request like:<br/>
+      <i>curl -X PUT -u name:password -H "Content-Type: application/json" -d '{"testconfigId":"12"}'
+      http://rip.testgang.net/rip/testrun</i>
+    </div>
+  </div>
+
+  </section>
+
+  <section id="faq">
+
+  <div class="page-header">
+    <h1>FAQ <small>most important questions</small></h1>
+  </div>
+
+   <div class="row">
+      <div class="col-lg-12">
+        <div class="list-group">
             <div class="list-group-item">
                <h4 class="list-group-item-heading">What is application package?</h4>
 
@@ -203,33 +201,33 @@
       </div>
    </div>
 
-   <hr>
+   </section id="faq">
 
-   <div class="row">
+    <div class="row tg-links">
       <div class="col-lg-4">
-         <div class="panel panel-default">
-            <div class="panel-heading">Counters</div>
-            <div>Users: 0</div>
-            <div>Devices: 0</div>
-            <div>Tests: 0</div>
-         </div>
+         <h4>Counters</h4>
+         <p>
+          Users: 0<br>
+          Devices: 0</br>
+          Tests: 0</br>
+         </p>        
       </div>
       <div class="col-lg-4">
-         <div class="panel panel-default">
-            <div class="panel-heading">Links</div>
-            <div><a href="">About Us</a></div>
-            <div><a href="https://plus.google.com/b/101936247128629508640/">Blog</a></div>
-         </div>
+        <h4>Links</h4>
+        <p>
+          <a href="">API</a></br>
+          <a href="https://plus.google.com/b/101936247128629508640/">Google+</a></br>
+          <a href="">Client Guide</a>
+          <a href="">Web app guide</a>
+        </p>
+         
       </div>
       <div class="col-lg-4">
-         <div class="panel panel-default">
-            <div class="panel-heading">Contacts</div>
-            <div>To be published</div>
-         </div>
+         <h4>Contacts</h4>
+         <p>info@testgang.com
+         </p>        
       </div>
    </div>
-
-   <hr>
 
    <footer>
       <p>&copy; TestGang 2013</p>
@@ -243,6 +241,8 @@
 <!-- Placed at the end of the document so the pages load faster -->
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.smooth-scroll.min.js"></script>
+<script src="js/custom.js"></script>
 </body>
 </html>
 

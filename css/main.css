@@ -1,3 +1,17 @@
 body {
    padding-top: 50px;
 }
+
+a.carousel-control {
+   background-image: none;
+}
+
+.tg-links {
+   margin-top: 150px;
+   background-color:#212121;
+   color: #999;
+}
+
+section {
+   margin-bottom:150px;
+}
