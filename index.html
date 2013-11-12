@@ -14,7 +14,7 @@
 
 <body>
 
-  <div class="navbar navbar-inverse navbar-fixed-top">
+<div class="navbar navbar-inverse navbar-fixed-top">
    <div class="container">
       <div class="navbar-header">
          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -39,193 +39,211 @@
 </div>
 
 <div class="container">
-  <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-  <!-- Indicators -->
-  <ol class="carousel-indicators">
-    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-  </ol>
+   <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+         <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+         <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+      </ol>
 
-  <!-- Wrapper for slides -->
-  <div class="carousel-inner">
-    <div class="item active">
-      <img src="images/slide-1.png"/>
-    </div>
-     <div class="item">
-      <img src="images/slide-2.png"/>
-    </div>
-  </div>
-</div>
-
-  <section id="gettingstarted">
-
-  <div class="page-header">
-     <h1>Getting started...</h1>
-  </div>
-
-  <div class="row">
-      <div class="col-lg-4">
-         <div class="panel panel-success">
-            <div class="panel-heading">How does it work ?</div>
-            <div class="panel-body">
-            <ul>
-               <li>Become a member by registering</li>
-               <li>Use devices shared with you to run tests for your application</li>
-               <li>Analyse test reports and device logs</li>
-               <li>Share device with your colleagues</li>
-            </ul>
-            </div>
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner">
+         <div class="item active">
+            <img src="images/slide-1.png"/>
          </div>
-      </div>
-      <div class="col-lg-4">
-         <div class="panel panel-success">
-            <div class="panel-heading">How to share devices ?</div>
-            <ul>
-               <li>Download the client</li>
-               <li>Connect your Android phone to your Windows/MAC/Linux laptop</li>
-               <li>Login to “TestGang Manager” and choose people to share your devices with.</li>
-            </ul>
-         </div>
-      </div>
-      <div class="col-lg-4">
-         <div class="panel panel-success">
-            <div class="panel-heading">How to run tests ?</div>
-            <ul>
-               <li>Upload your Android application (APK) file and test JAR files.</li>
-               <li>Create configure your test</li>
-               <li>Run test and wait for results</li>
-            </ul>
-         </div>
-      </div>
-      <div class="col-lg-12">
-       <img src="images/schema-2.png"/>
-    </div>
-   </div>
-
- </section>
-
-  <section id="features">
-  <div class="page-header">
-    <h1>Features <small>and many more to come...</small></h1>
-  </div>
-
-   <!-- Features -->
-   <div class="row">
-      <div class="col-lg-3">
-         <h4>Parallel test execution</h4>
-         <p>Improve test execution speed by running tests in FAST mode which will split
-          and run your tests in parralel on multiple devices</p>
-      </div>
-      <div class="col-lg-3">
-         <h4>Multiple OS support</h4>
-         <p>All there most popular operating systems Linux, Windows and Mac are supported.</p>
-      </div>
-      <div class="col-lg-3">
-         <h4>Easy and convenient test execution</h4>
-         <p>Start your tests on multiple device with click.</p>
-      </div>
-      <div class="col-lg-3">
-         <h4>Your own test community</h4>
-         <p>Sharing devices with your colleagues has never been easier.</p>
-      </div>
-   </div>
-
-   <hr>
-
-   <div class="row">
-      <div class="col-lg-4">
-         <h4>Detailed reports</h4>
-         <p>Get extensive test report and device logs collected during test execution.</p>
-
-      </div>
-      <div class="col-lg-4">
-         <h4>Multiple testing frameworks</h4>
-         <p>TestGang currently supports Instrumentation (link to google) (Robotium) and UIAutomator.</p>
-
-      </div>
-      <div class="col-lg-4">
-         <h4>Integrate and automate</h4>
-         <p>REST API interface that you can use to integrate with you CI environment or automate repetitive tasks.</p>
-      </div>
-   </div>
-
-  </section>
-
-  <section id="automation">
-
-  <div class="page-header">
-    <h1>Automation <small>and integration with Your tools</small></h1>
-  </div>
-
-   <div class="row">
-    <div class="col-lg-12">
-      Executing a test can be as simple as sending a http request like:<br/>
-      <pre>curl -X PUT -u name:password -H "Content-Type: application/json" -d '{"testconfigId":"12"}' http://rip.testgang.net/rip/testrun</pre>
-    </div>
-  </div>
-
-  </section>
-
-  <section id="faq">
-
-  <div class="page-header">
-    <h1>FAQ <small>most important questions</small></h1>
-  </div>
-
-   <div class="row">
-      <div class="col-lg-12">
-        <div class="list-group">
-            <div class="list-group-item">
-               <h4 class="list-group-item-heading">What is application package?</h4>
-
-               <p class="list-group-item-text">Application package or a test target is meant to be uploaded to the
-                  TestGang servers. It will be attempted to install it on maximum three devices matching predefined
-                  requirements.</p>
-            </div>
-         </div>
-         <div class="list-group">
-            <div class="list-group-item">
-               <h4 class="list-group-item-heading">What is test package?</h4>
-
-               <p class="list-group-item-text">Test package contains the actual tests to be run against defined
-                  application. Similar to application package it should uploaded onto TestGang servers for one to be
-                  able to use it.</p>
-            </div>
-         </div>
-         <div class="list-group">
-            <div class="list-group-item">
-               <h4 class="list-group-item-heading">What is test configuration?</h4>
-
-               <p class="list-group-item-text">Test configuration is used to define a link between application and test
-                  package, and the device type. Multiple device types are supported as well.</p>
-            </div>
+         <div class="item">
+            <img src="images/slide-2.png"/>
          </div>
       </div>
    </div>
+
+   <section id="gettingstarted">
+
+      <div class="page-header">
+         <h1>Getting started...</h1>
+      </div>
+
+      <div class="row">
+         <div class="col-lg-4">
+            <div class="panel panel-success">
+               <div class="panel-heading">How does it work ?</div>
+               <div class="panel-body">
+                  <ul>
+                     <li>Become a member by registering</li>
+                     <li>Use devices shared with you to run tests for your application</li>
+                     <li>Analyse test reports and device logs</li>
+                     <li>Share device with your colleagues</li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+         <div class="col-lg-4">
+            <div class="panel panel-success">
+               <div class="panel-heading">How to share devices ?</div>
+               <ul>
+                  <li>Download the client</li>
+                  <li>Connect your Android phone to your Windows/MAC/Linux laptop</li>
+                  <li>Login to “TestGang Manager” and choose people to share your devices with.</li>
+               </ul>
+            </div>
+         </div>
+         <div class="col-lg-4">
+            <div class="panel panel-success">
+               <div class="panel-heading">How to run tests ?</div>
+               <ul>
+                  <li>Upload your Android application (APK) file and test JAR files.</li>
+                  <li>Create configure your test</li>
+                  <li>Run test and wait for results</li>
+               </ul>
+            </div>
+         </div>
+         <div class="col-lg-12">
+            <img src="images/schema-2.png"/>
+         </div>
+      </div>
+
+   </section>
+
+   <section id="features">
+      <div class="page-header">
+         <h1>Features
+            <small>and many more to come...</small>
+         </h1>
+      </div>
+
+      <!-- Features -->
+      <div class="row">
+         <div class="col-lg-3">
+            <h4>Parallel test execution</h4>
+
+            <p>Improve test execution speed by running tests in FAST mode which will split
+               and run your tests in parralel on multiple devices</p>
+         </div>
+         <div class="col-lg-3">
+            <h4>Multiple OS support</h4>
+
+            <p>All there most popular operating systems Linux, Windows and Mac are supported.</p>
+         </div>
+         <div class="col-lg-3">
+            <h4>Easy and convenient test execution</h4>
+
+            <p>Start your tests on multiple device with click.</p>
+         </div>
+         <div class="col-lg-3">
+            <h4>Your own test community</h4>
+
+            <p>Sharing devices with your colleagues has never been easier.</p>
+         </div>
+      </div>
+
+      <hr>
+
+      <div class="row">
+         <div class="col-lg-4">
+            <h4>Detailed reports</h4>
+
+            <p>Get extensive test report and device logs collected during test execution.</p>
+
+         </div>
+         <div class="col-lg-4">
+            <h4>Multiple testing frameworks</h4>
+
+            <p>TestGang currently supports Instrumentation (link to google) (Robotium) and UIAutomator.</p>
+
+         </div>
+         <div class="col-lg-4">
+            <h4>Integrate and automate</h4>
+
+            <p>REST API interface that you can use to integrate with you CI environment or automate repetitive
+               tasks.</p>
+         </div>
+      </div>
+
+   </section>
+
+   <section id="automation">
+
+      <div class="page-header">
+         <h1>Automation
+            <small>and integration with Your tools</small>
+         </h1>
+      </div>
+
+      <div class="row">
+         <div class="col-lg-12">
+            Executing a test can be as simple as sending a http request like:<br/>
+            <pre>curl -X PUT -u name:password -H "Content-Type: application/json" -d '{"testconfigId":"12"}' http://rip.testgang.net/rip/testrun</pre>
+         </div>
+      </div>
+
+   </section>
+
+   <section id="faq">
+
+      <div class="page-header">
+         <h1>FAQ
+            <small>most important questions</small>
+         </h1>
+      </div>
+
+      <div class="row">
+         <div class="col-lg-12">
+            <div class="list-group">
+               <div class="list-group-item">
+                  <h4 class="list-group-item-heading">What is application package?</h4>
+
+                  <p class="list-group-item-text">Application package or a test target is meant to be uploaded to the
+                     TestGang servers. It will be attempted to install it on maximum three devices matching predefined
+                     requirements.</p>
+               </div>
+            </div>
+            <div class="list-group">
+               <div class="list-group-item">
+                  <h4 class="list-group-item-heading">What is test package?</h4>
+
+                  <p class="list-group-item-text">Test package contains the actual tests to be run against defined
+                     application. Similar to application package it should uploaded onto TestGang servers for one to be
+                     able to use it.</p>
+               </div>
+            </div>
+            <div class="list-group">
+               <div class="list-group-item">
+                  <h4 class="list-group-item-heading">What is test configuration?</h4>
+
+                  <p class="list-group-item-text">Test configuration is used to define a link between application and
+                     test
+                     package, and the device type. Multiple device types are supported as well.</p>
+               </div>
+            </div>
+         </div>
+      </div>
 
    </section id="faq">
 
-    <div class="row tg-links">
+   <div class="row tg-links">
       <div class="col-lg-4">
          <h4>Counters</h4>
+
          <p>
-          Users: 0<br>
-          Devices: 0</br>
-          Tests: 0</br>
+            Users: 0<br>
+            Devices: 0</br>
+            Tests: 0</br>
          </p>
       </div>
       <div class="col-lg-4">
-        <h4>Links</h4>
-        <p>
-          <a href="">API</a></br>
-          <a href="https://plus.google.com/b/101936247128629508640/">Google+</a></br>
-          <a href="">Client Guide</a>
-          <a href="">Web app guide</a>
-        </p>
+         <h4>Links</h4>
+
+         <p>
+            <a href="">API</a></br>
+            <a href="https://plus.google.com/b/101936247128629508640/">Google+</a></br>
+            <a href="">Client Guide</a>
+            <a href="">Web app guide</a>
+         </p>
 
       </div>
       <div class="col-lg-4">
          <h4>Contacts</h4>
+
          <p>info@testgang.com
          </p>
       </div>
