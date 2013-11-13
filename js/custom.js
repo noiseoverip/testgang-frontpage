@@ -1,17 +1,15 @@
-$(document).ready(function () {
-   console.log("done");
+$(document).ready(function () {   
 
    $('.carousel').carousel({
       interval: 3500
    });
-   // Navigation
-   $('ul.nav a').smoothScroll();
+
+   $('ul.nav a').smoothScroll({offset: -70});
 
    $('.navbar ul li').click(function (e) {
       $('.navbar ul li').removeClass('active');
       $(this).addClass('active');
 
-   });
-   console.log("done");
+   });   
 
 });

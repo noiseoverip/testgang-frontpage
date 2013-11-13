@@ -3,8 +3,8 @@
 <head>
    <meta charset="utf-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <meta name="description" content="">
-   <meta name="author" content="">
+   <meta name="description" content="TestGang - Android testing and device sharing">
+   <meta name="author" content="TestGang">
    <link rel="shortcut icon" href="../../assets/ico/favicon.png">
 
    <title>TestGang</title>
@@ -29,6 +29,7 @@
             <ul class="nav navbar-nav">
                <li class="active"><a href="#home">Home</a></li>
                <li><a href="#features">Features</a></li>
+               <li><a href="#briefdescription">How does it work ?</a></li>             
                <li><a href="#faq">Questions?</a></li>
                <li><a href="https://app.testgang.net">Log In</a></li>
             </ul>
@@ -39,7 +40,8 @@
 </div>
 
 <div class="container">
-   <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+
+   <div id="carousel" class="carousel slide" data-ride="carousel">
       <!-- Indicators -->
       <ol class="carousel-indicators">
          <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
@@ -57,126 +59,81 @@
       </div>
    </div>
 
-   <section id="gettingstarted">
-
-      <div class="page-header">
-         <h1>Getting started...</h1>
-      </div>
-
-      <div class="row">
-         <div class="col-lg-4">
-            <div class="panel panel-success">
-               <div class="panel-heading">How does it work ?</div>
-               <div class="panel-body">
-                  <ul>
-                     <li>Become a member by registering</li>
-                     <li>Use devices shared with you to run tests for your application</li>
-                     <li>Analyse test reports and device logs</li>
-                     <li>Share device with your colleagues</li>
-                  </ul>
-               </div>
-            </div>
-         </div>
-         <div class="col-lg-4">
-            <div class="panel panel-success">
-               <div class="panel-heading">How to share devices ?</div>
-               <ul>
-                  <li>Download the client</li>
-                  <li>Connect your Android phone to your Windows/MAC/Linux laptop</li>
-                  <li>Login to “TestGang Manager” and choose people to share your devices with.</li>
-               </ul>
-            </div>
-         </div>
-         <div class="col-lg-4">
-            <div class="panel panel-success">
-               <div class="panel-heading">How to run tests ?</div>
-               <ul>
-                  <li>Upload your Android application (APK) file and test JAR files.</li>
-                  <li>Create configure your test</li>
-                  <li>Run test and wait for results</li>
-               </ul>
-            </div>
-         </div>
-         <div class="col-lg-12">
-            <img src="images/schema-2.png"/>
-         </div>
-      </div>
-
-   </section>
-
-   <section id="features">
+   <section id="features">    
       <div class="page-header">
          <h1>Features
             <small>and many more to come...</small>
          </h1>
+      </div>      
+      <div class="row featurelist">
+        <div class="col-lg-3">
+          <h4>Easy and convenient test execution</h4>
+          <p>Configure and run your tests on multiple devices with a couple of clicks using easiy to use management web app.</p>
+        </div>
+        <div class="col-lg-3">
+          <h4>Supported testing Frameworks</h4>
+          <p>We support test cases written with popular testing frameworks like <a href="https://code.google.com/p/robotium/">Robotium </a>, <a href="https://github.com/calabash/calabash-android"> Calabash </a> and <a href="http://developer.android.com/tools/testing/testing_ui.html"> UiAutomator for UI testing.</a>.</p>
+        </div>
+        <div class="col-lg-3">
+          <h4>Faster parallel test execution</h4>
+          <p>Improve test execution speed by running tests in FAST mode which will split and run your tests in parallel on multiple devices</p>
+        </div>
+        <div class="col-lg-3">
+          <h4>Your own testing community</h4>
+          <p>Sharing devices with your colleagues has never been easier - share between groups, single users or all users.</p>
+        </div>
       </div>
+      <div class="row featurelist">
+        <div class="col-lg-4">
+          <h4>Detailed reports</h4>
+          <p>Test run reports include lists of devices on which tests were executed, number of run, failed test cases as well as logs collected from device during test execution.</p>
+        </div>
+        <div class="col-lg-4">
+          <h4>Integrate and automate</h4>
+          <p>Extensive REST API (http) interface that you can use to integrate with you CI environment or automate repetitive tasks. Check out <a href="https://raw.github.com/testgang/testgang-docs/master/TestGang-RestApi.md">REST API</a> documentation.</p>
+        </div>
+        <div class="col-lg-4">
+          <h4>Multiple OS support</h4>
+          <p>Required client software runs on all major platforms: Linux, Windows and Mac so you should have no problems hooking it up with your PC.</p>
+        </div>        
+      </div>      
+   </section> <!-- End of Features -->
 
-      <!-- Features -->
-      <div class="row">
-         <div class="col-lg-3">
-            <h4>Parallel test execution</h4>
-
-            <p>Improve test execution speed by running tests in FAST mode which will split
-               and run your tests in parralel on multiple devices</p>
-         </div>
-         <div class="col-lg-3">
-            <h4>Multiple OS support</h4>
-
-            <p>All there most popular operating systems Linux, Windows and Mac are supported.</p>
-         </div>
-         <div class="col-lg-3">
-            <h4>Easy and convenient test execution</h4>
-
-            <p>Start your tests on multiple device with click.</p>
-         </div>
-         <div class="col-lg-3">
-            <h4>Your own test community</h4>
-
-            <p>Sharing devices with your colleagues has never been easier.</p>
-         </div>
-      </div>
-
-      <hr>
-
-      <div class="row">
-         <div class="col-lg-4">
-            <h4>Detailed reports</h4>
-
-            <p>Get extensive test report and device logs collected during test execution.</p>
-
-         </div>
-         <div class="col-lg-4">
-            <h4>Multiple testing frameworks</h4>
-
-            <p>TestGang currently supports Instrumentation (link to google) (Robotium) and UIAutomator.</p>
-
-         </div>
-         <div class="col-lg-4">
-            <h4>Integrate and automate</h4>
-
-            <p>REST API interface that you can use to integrate with you CI environment or automate repetitive
-               tasks.</p>
-         </div>
-      </div>
-
-   </section>
-
-   <section id="automation">
+   <section id="briefdescription">
 
       <div class="page-header">
-         <h1>Automation
-            <small>and integration with Your tools</small>
-         </h1>
+         <h1>How does it work ?</h1>
       </div>
-
+     
+      <img class="img-responsive" src="images/system-schema.png" alt=""/>
+     
       <div class="row">
-         <div class="col-lg-12">
-            Executing a test can be as simple as sending a http request like:<br/>
-            <pre>curl -X PUT -u name:password -H "Content-Type: application/json" -d '{"testconfigId":"12"}' http://rip.testgang.net/rip/testrun</pre>
+        <div class="col-lg-4">
+          <div class="panel panel-success">
+            <div class="panel-heading">Connecting Android phone</div>
+              <div class="panel-body">
+              Download Android SDK, download our client app, run client app and you're done. Now, your device will be shown in management web app dashboard and you will be able to run tests on it and share with your colleagues. Client software acts as a thin agent between you Android phone and TestGang servers.
+              </div>
+          </div>
          </div>
+        <div class="col-lg-4">
+          <div class="panel panel-success">
+            <div class="panel-heading">Device sharing</div>
+              <div class="panel-body">
+              Once your connected devices is visible in a dashboard you can share this device with other users or user groups. This will allow others to executed their tests on your device. Check <a href="https://raw.github.com/testgang/testgang-docs/master/TestGang-client-guide.md"> client guide </a> for more information. Access can be revoked at any time and you can unplug your device at any time.
+              </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="panel panel-success">
+            <div class="panel-heading">Running tests</div>
+              <div class="panel-body">
+              Before running test you will for sure need to upload your applications APK file as well as test case package (JAR) which will be built by the test framework that you are using. After this you will have to quickly select from a couple of options and create test configuration which will define the way you want run test and on which devices. TestGang will distribute your test among available devices at a given time and you will be present with test results and logs collected from all devices. 
+              </div>
+            </div>
+        </div>        
       </div>
-
-   </section>
+   </section> <!-- End of system description -->
 
    <section id="faq">
 
@@ -187,77 +144,178 @@
       </div>
 
       <div class="row">
-         <div class="col-lg-12">
+         <div class="col-lg-6">
             <div class="list-group">
                <div class="list-group-item">
-                  <h4 class="list-group-item-heading">What is application package?</h4>
-
-                  <p class="list-group-item-text">Application package or a test target is meant to be uploaded to the
-                     TestGang servers. It will be attempted to install it on maximum three devices matching predefined
-                     requirements.</p>
+                  <h4 class="list-group-item-heading">How much does this cost ?</h4>
+                  <p class="list-group-item-text">
+                  </p>
                </div>
-            </div>
+            </div>            
+         </div>
+          <div class="col-lg-6">
             <div class="list-group">
                <div class="list-group-item">
-                  <h4 class="list-group-item-heading">What is test package?</h4>
-
-                  <p class="list-group-item-text">Test package contains the actual tests to be run against defined
-                     application. Similar to application package it should uploaded onto TestGang servers for one to be
-                     able to use it.</p>
+                  <h4 class="list-group-item-heading">Can i just share my device with anyone ?</h4>
+                  <p class="list-group-item-text">
+                  </p>
                </div>
-            </div>
+            </div>            
+         </div>
+          <div class="col-lg-6">
             <div class="list-group">
                <div class="list-group-item">
-                  <h4 class="list-group-item-heading">What is test configuration?</h4>
-
-                  <p class="list-group-item-text">Test configuration is used to define a link between application and
-                     test
-                     package, and the device type. Multiple device types are supported as well.</p>
+                  <h4 class="list-group-item-heading">How many devices do you have in pool ?</h4>
+                  <p class="list-group-item-text">
+                  </p>
                </div>
-            </div>
+            </div>            
+         </div>
+          <div class="col-lg-6">
+            <div class="list-group">
+               <div class="list-group-item">
+                  <h4 class="list-group-item-heading">How is this usefull to me ?</h4>
+                  <p class="list-group-item-text">
+                  </p>
+               </div>
+            </div>            
+         </div>
+         <div class="col-lg-6">
+            <div class="list-group">
+               <div class="list-group-item">
+                  <h4 class="list-group-item-heading">Why should i test my apps ?</h4>
+                  <p class="list-group-item-text">
+                  </p>
+               </div>
+            </div>            
+         </div>
+         <div class="col-lg-6">
+            <div class="list-group">
+               <div class="list-group-item">
+                  <h4 class="list-group-item-heading">Which devices do you support ?</h4>
+                  <p class="list-group-item-text">
+                  </p>
+               </div>
+            </div>            
+         </div>
+         <div class="col-lg-6">
+            <div class="list-group">
+               <div class="list-group-item">
+                  <h4 class="list-group-item-heading">Can i connect my Android emulator ?</h4>
+                  <p class="list-group-item-text">
+                  </p>
+               </div>
+            </div>            
+         </div>
+         <div class="col-lg-6">
+            <div class="list-group">
+               <div class="list-group-item">
+                  <h4 class="list-group-item-heading">Can i get the screenshots captured during test ?</h4>
+                  <p class="list-group-item-text">
+                  </p>
+               </div>
+            </div>            
+         </div>
+         <div class="col-lg-6">
+            <div class="list-group">
+               <div class="list-group-item">
+                  <h4 class="list-group-item-heading">Is it open source ?</h4>
+                  <p class="list-group-item-text">
+                  </p>
+               </div>
+            </div>            
+         </div>
+         <div class="col-lg-6">
+            <div class="list-group">
+               <div class="list-group-item">
+                  <h4 class="list-group-item-heading">How did you came up with this idea ?</h4>
+                  <p class="list-group-item-text">
+                  </p>
+               </div>
+            </div>            
+         </div>
+         <div class="col-lg-6">
+            <div class="list-group">
+               <div class="list-group-item">
+                  <h4 class="list-group-item-heading">There are other services like this, how are you different ?</h4>
+                  <p class="list-group-item-text">
+                  </p>
+               </div>
+            </div>            
+         </div>
+         <div class="col-lg-6">
+            <div class="list-group">
+               <div class="list-group-item">
+                  <h4 class="list-group-item-heading">How many Android phones can i connect to one computer ?</h4>
+                  <p class="list-group-item-text">
+                  </p>
+               </div>
+            </div>            
+         </div>
+         <div class="col-lg-6">
+            <div class="list-group">
+               <div class="list-group-item">
+                  <h4 class="list-group-item-heading">Can i ask my friend to connect their phones at night so i could run tests on them ?</h4>
+                  <p class="list-group-item-text">
+                  </p>
+               </div>
+            </div>            
+         </div>
+         <div class="col-lg-6">
+            <div class="list-group">
+               <div class="list-group-item">
+                  <h4 class="list-group-item-heading">Why should i give access to my device for others ?</h4>
+                  <p class="list-group-item-text">
+                  </p>
+               </div>
+            </div>            
+         </div>
+         <div class="col-lg-6">
+            <div class="list-group">
+               <div class="list-group-item">
+                  <h4 class="list-group-item-heading">Can someone harm my phone or delete my data during test execution ?</h4>
+                  <p class="list-group-item-text">
+                  </p>
+               </div>
+            </div>            
          </div>
       </div>
+   </section> <!-- End of FAQ section -->
 
-   </section id="faq">
+    <div class="row tg-links">
 
-   <div class="row tg-links">
       <div class="col-lg-4">
-         <h4>Counters</h4>
-
-         <p>
-            Users: 0<br>
-            Devices: 0</br>
-            Tests: 0</br>
-         </p>
+        <h4>Counters</h4>
+        <p>
+          Users: 0<br>
+          Devices: 0</br>
+          Tests: 0</br>
+        </p>
       </div>
+
       <div class="col-lg-4">
-         <h4>Links</h4>
-
-         <p>
-            <a href="">API</a></br>
-            <a href="https://plus.google.com/b/101936247128629508640/">Google+</a></br>
-            <a href="">Client Guide</a>
-            <a href="">Web app guide</a>
-         </p>
-
+        <h4>Links</h4>
+        <p>
+          <a href="https://raw.github.com/testgang/testgang-docs/master/TestGang-RestApi.md">REST API</a></br>
+          <a href="https://plus.google.com/b/101936247128629508640/">Google+</a></br>
+          <a href="https://raw.github.com/testgang/testgang-docs/master/TestGang-client-guide.md">Client Guide</a></br>
+          <a href="https://raw.github.com/testgang/testgang-docs/master/TestGang-webapp-guide.md">Web app guide</a>
+        </p>
       </div>
+
       <div class="col-lg-4">
-         <h4>Contacts</h4>
-
-         <p>info@testgang.net</p>
+        <h4>Contacts</h4>
+        <p>info@testgang.net</p>
       </div>
-   </div>
+
+    </div> <!-- End of links -->
 
    <footer>
       <p>&copy; TestGang 2013</p>
    </footer>
 
-</div>
-<!-- /container -->
+</div> <!-- /container -->
 
-<!-- Bootstrap core JavaScript
-================================================== -->
-<!-- Placed at the end of the document so the pages load faster -->
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/jquery.smooth-scroll.min.js"></script>
