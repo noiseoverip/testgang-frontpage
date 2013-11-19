@@ -29,7 +29,7 @@
             <ul class="nav navbar-nav">
                <li class="active"><a href="#home">Home</a></li>
                <li><a href="#features">Features</a></li>
-               <li><a href="#briefdescription">How does it work ?</a></li>             
+               <li><a href="#briefdescription">How does it work ?</a></li>
                <li><a href="#faq">Questions?</a></li>
                <li><a href="https://app.testgang.net">Log In</a></li>
             </ul>
@@ -38,6 +38,53 @@
       <!--/.navbar-collapse -->
    </div>
 </div>
+
+<div class="uv-tab uv-slide-right side-bar" id="uvTab">
+   <a id="uvTabLabel" class="side-bar" href="#feedback" data-toggle="modal" data-target="#feedback">
+      <img src="images/feedback-tab.png" alt="Feedback">
+   </a>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="feedback" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+   <div class="modal-dialog">
+      <div class="modal-content">
+         <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h4 class="modal-title" id="myModalLabel">Let us know what you think</h4>
+         </div>
+         <div class="modal-body">
+            <form id="form-contact" class="bs-example form-horizontal" action="php/email.clean.php">
+               <fieldset>
+                  <div class="form-group">
+                     <div class="col-lg-12">
+                        <input type="text" class="form-control name" placeholder="Name">
+                     </div>
+                  </div>
+
+                  <div class="form-group">
+                     <div class="col-lg-12">
+                        <input type="text" class="form-control email" placeholder="Email">
+                     </div>
+                  </div>
+
+                  <div class="form-group">
+                     <div class="col-lg-12">
+                        <textarea class="form-control message" rows="3" placeholder="Message"></textarea>
+                     </div>
+                  </div>
+                  <div class="form-group">
+                     <div class="col-lg-5 col-lg-offset-1">
+                        <button type="submit" class="btn btn-primary submit">Submit</button>
+                     </div>
+                  </div>
+                  <div id="form-confirmation"></div>
+               </fieldset>
+            </form>
+         </div>
+      </div><!-- /.modal-content -->
+   </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
 
 <div class="container">
 
@@ -59,12 +106,12 @@
       </div>
    </div>
 
-   <section id="features">    
+   <section id="features">
       <div class="page-header">
          <h1>Features
             <small>and many more to come...</small>
          </h1>
-      </div>      
+      </div>
       <div class="row featurelist">
         <div class="col-lg-3">
           <h4>Easy and convenient test execution</h4>
@@ -95,8 +142,8 @@
         <div class="col-lg-4">
           <h4>Multiple OS support</h4>
           <p>Required client software runs on all major platforms: Linux, Windows and Mac so you should have no problems hooking it up with your PC.</p>
-        </div>        
-      </div>      
+        </div>
+      </div>
    </section> <!-- End of Features -->
 
    <section id="briefdescription">
@@ -104,9 +151,9 @@
       <div class="page-header">
          <h1>How does it work ?</h1>
       </div>
-     
+
       <img class="img-responsive" src="images/system-schema.png" alt=""/>
-     
+
       <div class="row">
         <div class="col-lg-4">
           <div class="panel panel-success">
@@ -128,10 +175,10 @@
           <div class="panel panel-success">
             <div class="panel-heading">Running tests</div>
               <div class="panel-body">
-              Before running test you will for sure need to upload your applications APK file as well as test case package (JAR) which will be built by the test framework that you are using. After this you will have to quickly select from a couple of options and create test configuration which will define the way you want run test and on which devices. TestGang will distribute your test among available devices at a given time and you will be present with test results and logs collected from all devices. 
+              Before running test you will for sure need to upload your applications APK file as well as test case package (JAR) which will be built by the test framework that you are using. After this you will have to quickly select from a couple of options and create test configuration which will define the way you want run test and on which devices. TestGang will distribute your test among available devices at a given time and you will be present with test results and logs collected from all devices.
               </div>
             </div>
-        </div>        
+        </div>
       </div>
    </section> <!-- End of system description -->
 
@@ -151,7 +198,7 @@
                   <p class="list-group-item-text">
                   </p>
                </div>
-            </div>            
+            </div>
          </div>
           <div class="col-lg-6">
             <div class="list-group">
@@ -160,7 +207,7 @@
                   <p class="list-group-item-text">
                   </p>
                </div>
-            </div>            
+            </div>
          </div>
           <div class="col-lg-6">
             <div class="list-group">
@@ -169,7 +216,7 @@
                   <p class="list-group-item-text">
                   </p>
                </div>
-            </div>            
+            </div>
          </div>
           <div class="col-lg-6">
             <div class="list-group">
@@ -178,7 +225,7 @@
                   <p class="list-group-item-text">
                   </p>
                </div>
-            </div>            
+            </div>
          </div>
          <div class="col-lg-6">
             <div class="list-group">
@@ -187,7 +234,7 @@
                   <p class="list-group-item-text">
                   </p>
                </div>
-            </div>            
+            </div>
          </div>
          <div class="col-lg-6">
             <div class="list-group">
@@ -196,7 +243,7 @@
                   <p class="list-group-item-text">
                   </p>
                </div>
-            </div>            
+            </div>
          </div>
          <div class="col-lg-6">
             <div class="list-group">
@@ -205,7 +252,7 @@
                   <p class="list-group-item-text">
                   </p>
                </div>
-            </div>            
+            </div>
          </div>
          <div class="col-lg-6">
             <div class="list-group">
@@ -214,7 +261,7 @@
                   <p class="list-group-item-text">
                   </p>
                </div>
-            </div>            
+            </div>
          </div>
          <div class="col-lg-6">
             <div class="list-group">
@@ -223,7 +270,7 @@
                   <p class="list-group-item-text">
                   </p>
                </div>
-            </div>            
+            </div>
          </div>
          <div class="col-lg-6">
             <div class="list-group">
@@ -232,7 +279,7 @@
                   <p class="list-group-item-text">
                   </p>
                </div>
-            </div>            
+            </div>
          </div>
          <div class="col-lg-6">
             <div class="list-group">
@@ -241,7 +288,7 @@
                   <p class="list-group-item-text">
                   </p>
                </div>
-            </div>            
+            </div>
          </div>
          <div class="col-lg-6">
             <div class="list-group">
@@ -250,7 +297,7 @@
                   <p class="list-group-item-text">
                   </p>
                </div>
-            </div>            
+            </div>
          </div>
          <div class="col-lg-6">
             <div class="list-group">
@@ -259,7 +306,7 @@
                   <p class="list-group-item-text">
                   </p>
                </div>
-            </div>            
+            </div>
          </div>
          <div class="col-lg-6">
             <div class="list-group">
@@ -268,7 +315,7 @@
                   <p class="list-group-item-text">
                   </p>
                </div>
-            </div>            
+            </div>
          </div>
          <div class="col-lg-6">
             <div class="list-group">
@@ -277,7 +324,7 @@
                   <p class="list-group-item-text">
                   </p>
                </div>
-            </div>            
+            </div>
          </div>
       </div>
    </section> <!-- End of FAQ section -->
