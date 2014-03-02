@@ -12,6 +12,11 @@ $(document).ready(function () {
 
    });
 
+   // Kypado configuration
+   $('#kypado-terms').click(function(e) {
+      Kypado.load("1");
+   });
+
 });
 
 $("#form-contact").each(function () {
