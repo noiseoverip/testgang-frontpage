@@ -27,12 +27,13 @@
       <div class="navbar-collapse collapse">
          <form class="navbar-form navbar-right">
             <ul class="nav navbar-nav">
-               <li class="active"><a href="#home">Home</a></li>
-               <li><a href="#features">Features</a></li>
+               <li class="active"><a href="#home">Home</a></li>               
                <li><a href="#briefdescription">How does it work ?</a></li>
-               <li><a href="#faq">Questions?</a></li>
+               <li><a href="#usecases">Use cases</a></li>
+               <li><a href="#features">Features</a></li>               
                <li><a href="https://app.testgang.net">Log In</a></li>
                <li><a href="https://app.testgang.net/#register">Sign up</a></li>
+               <li><a href="https://github.com/testgang/testgang-docs/blob/master/TestGang-client-guide.md#testgang-docs">Download</a></li>
                <li>
                <a class="w-inline-block" href="https://www.google.com/+TestgangNetwork" target="_blank">
                 <img class="social-buttons" src="images/google.png" width="30" alt="google.png">
@@ -116,17 +117,58 @@
          </div>
       </div>
    </div>
-   
-    <section id="usecases" style="display:none;">
+  
+  <section id="briefdescription">
+
       <div class="page-header">
-         <h1>How can i use this ?</h1>
+         <h1>How does it work ?</h1>
+      </div>
+
+      <img class="img-responsive" src="images/system-schema.png" alt=""/>
+
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="panel panel-success">
+            <div class="panel-heading">Connecting Android phone</div>
+              <div class="panel-body">
+              You can connect your Android phone to TestGang network using our lightweight <a href="https://github.com/testgang/testgang-docs/blob/master/TestGang-client-guide.md#testgang-docs">client app</a>.
+              By default, all your devices will be assigned to your private device pool and you will be able to run tests on them. However, this is not a neccesary step in order to make use of TestGang.
+              </div>
+          </div>
+         </div>
+        <div class="col-lg-4">
+          <div class="panel panel-success">
+            <div class="panel-heading">Device sharing</div>
+              <div class="panel-body">
+              Your connected devices are visible in the dashboard you can share them with other users or user groups. This will allow others to execute tests on your device.
+              You will stay in full control - access can be revoked and device can be unpluged at any time.
+              </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="panel panel-success">
+            <div class="panel-heading">Running tests</div>
+              <div class="panel-body">
+              To run tests: upload application and test packages, configure test parameters - choose device types, distribution mode and execute !
+              TestGang will distribute your tests among selected devices and you will be presented with test summary, logs, screenshots and video.
+              </div>
+            </div>
+        </div>
+      </div>
+   </section> <!-- End of system description -->
+
+  <section id="usecases" style="display:block;">
+      <div class="page-header">
+         <h1>Use cases
+            <small>few example on how TestGang can be used...</small>
+         </h1>
       </div>      
 
       <div class="row uc">          
         <div class="col-lg-5 col-lg-offset-1 uc-text">
-          <h3>Are you a member of a developer team, or have some friends developers ?          
+          <h3>Are you a member of a developer team, or have friends developers ?          
           </h3> 
-          <h4>Connect all your Android's and share them for automated testing 
+          <h4>Connect all Android's into your teams device pool. Every team member can then easily execute tests on all devices simultaneously.
           </h4>
         </div>
         <div class="col-lg-5">
@@ -139,10 +181,10 @@
         </div>
         <div class="col-lg-5 uc-text">
           <h3>
-          Have an unused Android phone ?          
+          Have an Android phone used for development only ?          
           </h3> 
           <h4>
-          Connect it to TestGang and earn points while others will use it to execute tests
+          Connect it to TestGang and share it with other users. This way to will earn testing time which can later be used to run tests on other devices !
           </h4>
         </div>
       </div>
@@ -152,7 +194,7 @@
           Lack of own devices and no friends to share them with you?          
           </h3>
           <h4>
-          No problem, you can buy testing time and test on as many devices as you wish
+          No problem, you can buy testing time and test on as many devices provided by us or other users
           </h4>
         </div>
         <div class="col-lg-5">
@@ -204,246 +246,38 @@
       </div>
    </section> <!-- End of Features -->
 
-   <section id="briefdescription">
-
-      <div class="page-header">
-         <h1>How does it work ?</h1>
-      </div>
-
-      <img class="img-responsive" src="images/system-schema.png" alt=""/>
-
-      <div class="row">
-        <div class="col-lg-4">
-          <div class="panel panel-success">
-            <div class="panel-heading">Connecting Android phone</div>
-              <div class="panel-body">
-              Download Android SDK, download our client app, run client app and you're done. Now, your device will be
-                 shown in management web app dashboard and you will be able to run tests on it and share it with your
-                 colleagues. Client software acts as a thin agent between you, Android phone and TestGang servers.
-              </div>
-          </div>
-         </div>
-        <div class="col-lg-4">
-          <div class="panel panel-success">
-            <div class="panel-heading">Device sharing</div>
-              <div class="panel-body">
-              Once your connected devices are visible in the dashboard you can share them  with other users or user groups. This will allow others to execute tests on your device. Check
-                 <a href="https://github.com/testgang/testgang-docs/blob/master/TestGang-client-guide.md#testgang-docs"> client guide </a> for more information. Access can be revoked at any time and you can unplug your device at any time.
-              </div>
-            </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="panel panel-success">
-            <div class="panel-heading">Running tests</div>
-              <div class="panel-body">
-              Before running a test you will need to upload your applications APK file as well as test
-                 case package (JAR) that was built by the chosen test framework. After this you will
-                 create a test configuration that defines the way you want to execute the tests and on which devices.
-                 TestGang will distribute your tests among available devices at a given time and you will be presented
-                 with test results and logs collected from all devices.
-              </div>
-            </div>
-        </div>
-      </div>
-   </section> <!-- End of system description -->
-
-   <section id="faq">
-
-      <div class="page-header">
-         <h1>FAQ
-            <small>most important questions</small>
-         </h1>
-      </div>
-
-      <div class="row">
-         <div class="col-lg-6">
-            <div class="list-group">
-               <div class="list-group-item">
-                  <h4 class="list-group-item-heading">How much does it cost?</h4>
-                  <p class="list-group-item-text">
-                    Nothing, this service is completely free.
-                  </p>
-               </div>
-            </div>
-         </div>
-          <div class="col-lg-6">
-            <div class="list-group">
-               <div class="list-group-item">
-                  <h4 class="list-group-item-heading">Can I share my device with anyone?</h4>
-                  <p class="list-group-item-text">
-                    Yes! But you should not share your personal phone with your private data on it. Also, we do not recommend leaving your SIM card in it. 
-                  </p>
-               </div>
-            </div>
-         </div>
-          <div class="col-lg-6">
-            <div class="list-group">
-               <div class="list-group-item">
-                  <h4 class="list-group-item-heading">How many devices do you have in the pool?</h4>
-                  <p class="list-group-item-text">
-                    We do not control the number of devices, it’s completely dynamic and depends on devices shared by the members.
-                  </p>
-               </div>
-            </div>
-         </div>
-          <div class="col-lg-6">
-            <div class="list-group">
-               <div class="list-group-item">
-                  <h4 class="list-group-item-heading">How is this useful for me?</h4>
-                  <p class="list-group-item-text">
-                    In many ways. For example you and your friends/colleagues can connect devices into a shared pool and use it for running tests faster including multiple devices, or you can run a number of Android emulators on your server and use this platform to manage test execution on all of them in parallel, or you can simply share your unused devices with all other users.
-                  </p>
-               </div>
-            </div>
-         </div>
-         <div class="col-lg-6">
-            <div class="list-group">
-               <div class="list-group-item">
-                  <h4 class="list-group-item-heading">Why should I test my apps?</h4>
-                  <p class="list-group-item-text">
-                    Because there numerous variations of devices, screen sizes and other differences in Android devices that potentially can break your application or make it behave unexpectedly.
-                  </p>
-               </div>
-            </div>
-         </div>
-         <div class="col-lg-6">
-            <div class="list-group">
-               <div class="list-group-item">
-                  <h4 class="list-group-item-heading">What kind of devices do you support?</h4>
-                  <p class="list-group-item-text">
-                    This device sharing platform is device agnostic and supports any Android phone or tablet even including emulators.
-                  </p>
-               </div>
-            </div>
-         </div>
-         <div class="col-lg-6">
-            <div class="list-group">
-               <div class="list-group-item">
-                  <h4 class="list-group-item-heading">Can I connect my Android emulator?</h4>
-                  <p class="list-group-item-text">
-                    Yes, in fact, you can run multiple emulator on same computer.
-                  </p>
-               </div>
-            </div>
-         </div>
-         <div class="col-lg-6">
-            <div class="list-group">
-               <div class="list-group-item">
-                  <h4 class="list-group-item-heading">Can I get the screenshots captured during test?</h4>
-                  <p class="list-group-item-text">
-                    No yet, but it is coming soon.
-                  </p>
-               </div>
-            </div>
-         </div>
-         <div class="col-lg-6">
-            <div class="list-group">
-               <div class="list-group-item">
-                  <h4 class="list-group-item-heading">Is this an open source project?</h4>
-                  <p class="list-group-item-text">
-                    No, but we are going to open source at least the client code.
-                  </p>
-               </div>
-            </div>
-         </div>
-         <div class="col-lg-6">
-            <div class="list-group">
-               <div class="list-group-item">
-                  <h4 class="list-group-item-heading">How did you came up with this idea?</h4>
-                  <p class="list-group-item-text">
-                    The idea was born when thinking of a topic for the <a href="http://urn.kb.se/resolve?urn=urn:nbn:se:kth:diva-124393">master thesis</a>.
-                  </p>
-               </div>
-            </div>
-         </div>
-         <div class="col-lg-6">
-            <div class="list-group">
-               <div class="list-group-item">
-                  <h4 class="list-group-item-heading">There are other services like this, how are you different?</h4>
-                  <p class="list-group-item-text">
-                    We want to explore the fact that there are thousands of Android developers out there and all of them have at least one phone. If all of them would connect to this service, there would be no need for expensive test runs on a device cloud based services.
-                  </p>
-               </div>
-            </div>
-         </div>
-         <div class="col-lg-6">
-            <div class="list-group">
-               <div class="list-group-item">
-                  <h4 class="list-group-item-heading">How many Android phones can I connect to one computer?</h4>
-                  <p class="list-group-item-text">
-                    Probably as many as your USB bus will hold. Our client software does not limit it in any way.
-                  </p>
-               </div>
-            </div>
-         </div>
-         <div class="col-lg-6">
-            <div class="list-group">
-               <div class="list-group-item">
-                  <h4 class="list-group-item-heading">Can i ask my friends to connect their phones at night so I could run tests on them?</h4>
-                  <p class="list-group-item-text">
-                    Sure, you could ask your relatives and friends to help you out with testing by sharing their Android devices with you.
-                  </p>
-               </div>
-            </div>
-         </div>
-         <div class="col-lg-6">
-            <div class="list-group">
-               <div class="list-group-item">
-                  <h4 class="list-group-item-heading">Why should I share my Android with others?</h4>
-                  <p class="list-group-item-text">
-                    No particular reason for now, but we are thinking about introducing some tit-for-tat strategy or bonus points which would encourage to share your devices with others and in return, received for example additional time for your test runs.
-                  </p>
-               </div>
-            </div>
-         </div>
-         <div class="col-lg-6">
-            <div class="list-group">
-               <div class="list-group-item">
-                  <h4 class="list-group-item-heading">Can someone harm my phone or delete my data during test execution?</h4>
-                  <p class="list-group-item-text">
-                    Yes! We cannot possible protect you from this (although we have some ideas for the future) so be careful with whom you share your device.
-                  </p>
-               </div>
-            </div>
-         </div>
-      </div>
-   </section> <!-- End of FAQ section -->
-
-    <div class="row tg-links">
-
-      <!-- <div class="col-lg-4">
-        <h4>Counters</h4>
-        <p>
-          Users: 0<br>
-          Devices: 0</br>
-          Tests: 0</br>
-        </p>
-      </div> -->
-
-      <div class="col-lg-6">
-        <h3>Links</h3>
-        <p>
-          <a href="https://github.com/testgang/testgang-docs/blob/master/TestGang-RestApi.md">REST API</a></br>
-          <a href="https://plus.google.com/+TestgangNetwork" rel="publisher">Google+</a></br>
-          <a href="https://www.facebook.com/testgang.net">Facebook</a><br/>
-          <a href="https://github.com/testgang/testgang-docs/blob/master/TestGang-client-guide.md#testgang-docs">Client Guide</a></br>
-          <a href="https://github.com/testgang/testgang-docs/blob/master/TestGang-webapp-guide.md">Web app guide</a><br />
-        </p>
-      </div>
-
-      <div class="col-lg-6">
-        <h3>Contacts</h3>
-        <h4>Email: info@testgang.net</h4>
-        <h4>Location: Stockholm, Sweden</h4>
-      </div>
-
-    </div> <!-- End of links -->
-
-   <footer>
-      <p>&copy; TestGang 2013 &nbsp;&nbsp;&nbsp;<a href="#" id="kypado-terms">Privacy Policy</a></p>
-   </footer>
+    
 
 </div> <!-- /container -->
+
+<div class="tg-links">
+  <div class="container">
+    <div class="row">
+          <div class="col-lg-4 col-lg-offset-2">
+            <h3>Links</h3>
+            <p>
+              <a href="https://github.com/testgang/testgang-docs/blob/master/TestGang-RestApi.md">REST API</a></br>
+              <a href="https://plus.google.com/+TestgangNetwork" rel="publisher">Google+</a></br>
+              <a href="https://www.facebook.com/testgang.net">Facebook</a><br/>
+              <a href="https://github.com/testgang/testgang-docs/blob/master/TestGang-client-guide.md#testgang-docs">Client Guide</a></br>
+              <a href="https://github.com/testgang/testgang-docs/blob/master/TestGang-webapp-guide.md">Web app guide</a><br />
+            </p>
+          </div>
+          <div class="col-lg-4">
+            <h3>Contacts</h3>
+            <h4>Email: info@testgang.net</h4>
+            <h4>Location: Stockholm, Sweden</h4>
+          </div>
+    </div>
+  </div>
+</div> <!-- End of links -->
+
+<footer>
+  <center>
+  <p>&copy; TestGang 2013 &nbsp;&nbsp;&nbsp;<a href="#" id="kypado-terms">Privacy Policy</a></p>
+  </center>
+</footer>
+
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
